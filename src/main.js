@@ -1,12 +1,14 @@
 import "./style.css";
-
-import { Header } from "./components/header.js";
+import { Home } from "./pages/home.js";
+import { Categories } from "./pages/categories.js";
 
 const app = document.querySelector("#app");
 
-app.innerHTML = `
-  <div class="balloons-shop">
-      ${Header()}
+function render(page) {
+  if (page === "home") app.innerHTML = Home();
+  if (page === "categories") app.innerHTML = Categories();
+}
 
-  </div>
-`;
+window.render = render; 
+
+render("home");

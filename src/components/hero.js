@@ -1,0 +1,7 @@
+export function Hero() {
+  return `
+    <section class="hero">
+      <h1>HERO!</h1>
+    </section>
+  `;
+}
