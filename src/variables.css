@@ -11,4 +11,14 @@
   --color-900: #180e18;
   --color-1000: #ffffff;
   --color-1100: #a1e2eb;
+  --color-1200: #feddff;
+  --color-1300: #eeeeee;
+  --color-0000: #000000;
+  --color-1400: #fc42ff;
+  --coolr-1500: #7e7e7e;
+  --color-1600:#0b0b0b80 ;
+}
+
+:root {
+  --font-main: "Montserrat", sans-serif;
 }
