@@ -73,5 +73,12 @@ body.no-scroll {
 }
 
 .container {
-  max-width: 1380px;
+  max-width: 1440px;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 100%;
+    width: 100%;
+  }
 }

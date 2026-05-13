@@ -1,4 +1,6 @@
 :root {
+  --font-main: "Montserrat", sans-serif;
+
   --color-50: #fef4fe;
   --color-100: #fce7fc;
   --color-200: #f9cffa;
@@ -16,9 +18,10 @@
   --color-0000: #000000;
   --color-1400: #fc42ff;
   --coolr-1500: #7e7e7e;
-  --color-1600:#0b0b0b80 ;
+  --color-1600: #0b0b0b80;
+  --color-1700: #fff3ff;
+  --color-1800: #c949ca;
+  --color-1900: #323232;
+  --color-2000: #A9A9A9;
 }
 
-:root {
-  --font-main: "Montserrat", sans-serif;
-}
