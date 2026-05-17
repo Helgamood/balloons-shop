@@ -1,5 +1,8 @@
 @import "./variables.css";
 @import "./styles/header.css";
+@import "./styles/hero.css";
+
+@import "./styles/footer.css";
 
 @font-face {
   font-family: "Montserrat";
@@ -74,11 +77,48 @@ body.no-scroll {
 
 .container {
   max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
 }
 
+.number {
+  font-size: 28px;
+  line-height: 1.3;
+  font-weight: 600;
+  color: var(--color-0000);
+}
+
+.number:hover {
+  color: var(--color-1400);
+}
 @media (min-width: 1440px) {
-  .container {
-    max-width: 100%;
-    width: 100%;
+  .header__number {
+    font-size: 15px;
+    line-height: 1.3;
+    font-weight: 600;
   }
+}
+
+.socials-wrap {
+  display: flex;
+  gap: 20px;
+}
+
+.social-link {
+  width: 30px;
+  height: 30px;
+}
+
+.social-link svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.social-link svg {
+  fill: var(--color-0000);
+}
+
+.social-link svg:hover {
+  fill: var(--color-1400);
 }

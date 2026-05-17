@@ -1,0 +1,145 @@
+.hero {
+  display: flex;
+  justify-content: flex-start;
+
+  background: url("./src/images/hero/hero-mob.jpg") no-repeat top / cover;
+}
+
+.hero__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 25px;
+  padding: 35px 10px;
+}
+
+.hero__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__title {
+  color: var(--color-1000);
+  font-size: 28px;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.hero__subtitle {
+  color: var(--color-1000);
+  font-size: 18px;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.hero__btns {
+  display: flex;
+}
+
+.hero__btn-promotion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--color-1000);
+  border-radius: 5px;
+}
+
+.hero__btn-text-mob {
+  font-size: 16px;
+  line-height: 1.3;
+  font-weight: 700;
+  color: var(--color-2100);
+}
+
+.hero__btn-text-desktop,
+.hero__btn-more {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    height: calc(100vh - 149px);
+    align-items: center;
+
+    background: url("./src/images/hero/hero.jpg") var(--bg-hero) no-repeat
+      right / contain;
+  }
+
+  .hero__wrap {
+    gap: 60px;
+    padding: 50px;
+  }
+
+  .hero__title {
+    font-size: 80px;
+  }
+
+  .hero__subtitle {
+    font-size: 63px;
+  }
+
+  .hero__btns {
+    display: flex;
+    gap: 40px;
+  }
+
+  .hero__btn-promotion {
+    padding: 25px 50px;
+    border-radius: 13px;
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+
+  .hero__btn-promotion:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .hero__btn-text-desktop {
+    display: flex;
+    font-size: 25px;
+    line-height: 1.3;
+    font-weight: 700;
+    color: var(--color-2100);
+  }
+
+  .hero__btn-text-mob {
+    display: none;
+  }
+
+  .hero__btn-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: 2px solid var(--color-1000);
+    border-radius: 13px;
+    font-size: 25px;
+    line-height: 1.3;
+    font-weight: 700;
+    padding: 25px 40px;
+    color: var(--color-1000);
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+
+  .hero__btn-more:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+}
+
+@media (min-width: 1440px) {
+  .hero {
+    max-height: calc(100vh - 166px);
+  }
+}
+
+@media (min-width: 1920px) {
+  .hero {
+    max-height: 600px;
+  }
+}
